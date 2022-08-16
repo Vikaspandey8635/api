@@ -1,0 +1,21 @@
+<p>list works!</p>
+
+
+<table class="table1" >
+    <tr>
+      <th>userId</th>
+      <th>id</th>
+      <th>title</th>
+      <th>body</th>
+      <th>opration</th>
+    </tr>
+    <tr *ngFor="let e of abc">
+        <td>{{e.userId}}</td>
+        <td>{{e.id}}</td>
+        <td>{{e.title}}</td>
+        <td>{{e.body}}</td>
+        <td><button (click)="removed(e.id)">Delete</button>  <button routerLink="/addput/{{e.id}}">update data</button></td>
+        
+    </tr>
+  </table>
+  <router-outlet></router-outlet>

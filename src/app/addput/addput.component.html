@@ -1,0 +1,33 @@
+<p>edit </p>
+ 
+<form [formGroup]="updatelist" (ngSubmit)="updatedata()">
+
+    <div>
+        <label>userId</label>
+        <input type="text" placeholder="userid" formControlName="userId">
+    </div><br>
+    <div>
+        <label>id</label>
+        <input type="text" placeholder="id" formControlName="id">
+    </div><br>
+    <div>
+        <label>title</label>
+        <input type="text" placeholder="title" formControlName="title">
+    </div><br>
+    <div>
+        <label>body</label>
+        <input type="text" placeholder="body" formControlName="body">
+    </div><br>
+    <button type="submit"> update data</button>
+
+</form>
+
+<!-- <label>userId</label>
+<input type="text" placeholder="userid"  [(ngModel)]="userID"><br><br>
+<label>id</label>
+<input type="text" placeholder="id" [(ngModel)]="id"><br><br>
+<label>title</label>
+<input type="text" placeholder="title"  [(ngModel)]="title"><br><br>
+<label>body</label>
+<input type="text" placeholder="title"  [(ngModel)]="body"><br><br>
+<button (click)="submit()"> update data</button> -->
